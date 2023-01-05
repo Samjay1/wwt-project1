@@ -1,0 +1,46 @@
+.defaultColor{
+    background-color: rgb(1, 95, 121)!important;
+}
+
+.defaultMidiumColor{
+    background-color: rgba(1, 95, 121, 0.808)!important;
+}
+
+
+.defaultLightColor{
+    background-color: rgba(1, 95, 121, 0.455)!important;
+}
+
+.textColor{
+    color: rgb(1, 95, 121)!important;
+}
+
+.textDarkColor{
+    color: rgb(1, 71, 90)!important;
+}
+.defaultBorderColor{
+    border-color: rgb(1, 95, 121)!important;
+}
+
+
+
+.defaultBtn{
+    background-color: rgba(1, 95, 121)!important;
+}
+.defaultBtn:hover{
+    background-color: rgba(2, 128, 163, 0.808)!important;
+}
+
+.defaultTruncate {
+    width: 100px!important;
+    white-space: nowrap!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+  }
+
+  .defaultLongTruncate {
+    width: 300px!important;
+    white-space: nowrap!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+  }
