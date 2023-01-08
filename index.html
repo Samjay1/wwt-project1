@@ -5,20 +5,200 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../public/css.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>CTVET</title>
 </head>
-<body style="font-family: 'Roboto', sans-serif;" class="bg-gray-100">
+<body style="font-family: 'Roboto', sans-serif;">
+     <!-- Main content here -->
+     <div class="flex-1 lg:p-10 p-2 text-2xl font-bold">
+     
+            <!-- Content here -->
+         <div class="lg:p-4 bg-white mt-5 lg:rounded-lg rounded-t-3xl">
+            
+            <div class="bg-gray-200 defaultLightColor rounded-t-3xl">
+                  <!-- Logo and Company description -->
+                 <div class="pt-2 ">
+                     <img class="h-24 w-24 border defaultBorderRadius bg-white my-2 m-auto" src="../../public/images/logo.png">
+                     <div class="lg:w-2/3 m-auto bg-white text-center lg:rounded-t-3xl py-10 px-2">
+                         <p class="lg:text-2xl text-lg">GHANA CUSTOMER SERVICE INDEX SURVEY 2022</p> 
+                         <p class="text-base">Multi-sector Survey on Customer Service Experience in Ghana </p>
+                     </div>
+                 </div>
+             </div>
+             <div class="bg-gray-100  pb-10">
+                  <!-- Question Container here -->
+                  <div class="lg:w-2/3 bg-gray-50 m-auto">
 
-    <div class="w-80 mx-auto my-20 bg-white shadow-lg rounded-xl p-5 space-y-3">
-        <p class="text-4xl font-bold p-3 text-center">All Dashboards</p>
+                     <!-- Sector titles -->
+                     <div class="lg:p-10 p-3">
+                         <p class="text-gray-800 text-center">SECTORS OF ORGANIZATIONS</p>
+                     </div>
+
+                     <!-- All Questions -->
+                     <div class="bg-white">
+                           <!-- Question -->
+                       <div class="my-4">
+                         <div class="border-l-2 border-orange-400 p-5 lg:pl-10 ">
+                             <p class="text-base">Please select what sector you want to rate. SINGLE RESPONSE  <span class="text-red-600">*</span></p>
+                             <!-- answers -->
+                             <div class="my-2">
+                                 <div class="flex items-center mb-4">
+                                     <input class="mr-1" type="radio" checked="checked" name="radio">
+                                     <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Answer1</label>
+                                 </div>
+                                 <div class="flex items-center mb-4">
+                                     <input class="mr-1" type="radio" checked="checked" name="radio">
+                                     <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Answer2</label>
+                                 </div>
+                                 <div class="flex items-center mb-4">
+                                     <input class="mr-1" type="radio" checked="checked" name="radio">
+                                     <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Answer3</label>
+                                 </div>
+                             </div>
+                             <!-- End answers -->
+                         </div>
+                   </div>
+                    <!-- End Question -->
+
+                    <!-- Seperator line -->
+                          <hr class="border-1 border-orange-200 mx-5">
+                          
+                          <!-- Question -->
+                       <div class="my-4">
+                             <div class="border-l-2 border-orange-400 p-5 lg:pl-10 ">
+                                 <p class="text-base">Please select what sector you want to rate. SINGLE RESPONSE  <span class="text-red-600">*</span></p>
+                                 <!-- answers -->
+                                 <div class="my-2">
+                                     <div class="flex items-center mb-4">
+                                         <input class="mr-1" type="radio" name="radio">
+                                         <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Answer1</label>
+                                     </div>
+                                     <div class="flex items-center mb-4">
+                                         <input class="mr-1" type="radio"  name="radio">
+                                         <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Answer2</label>
+                                     </div>
+                                     <div class="flex items-center mb-4">
+                                         <input class="mr-1" type="radio" name="radio">
+                                         <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Answer3</label>
+                                     </div>
+                                     <div class="flex items-center mb-4">
+                                         <input class="mr-1" id="other" type="radio" name="radio" value="otherRadio">
+                                         <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Other</label>
+                                         <div id="customInput" style="visibility: hidden;">
+                                             <input  id="otherInput" class="ml-2  border-b focus:outline-none hover:border-blue-400 text-base" type="text">
+                                             <button id="acceptBtn" class="px-3 rounded text-base bg-orange-500">Add</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <!-- End answers -->
+                             </div>
+                       </div>
+                        <!-- End Question -->
+
+                        <!-- Seperator line -->
+                        <hr class="border-1 border-orange-200 mx-5">
+                          
+                        <!-- Question -->
+                     <div class="my-4">
+                           <div class="border-l-2 border-orange-400 p-5 lg:pl-10 ">
+                               <p class="text-base">Please select what sector you want to rate. SINGLE RESPONSE  <span class="text-red-600">*</span></p>
+                               <!-- answers -->
+                               <div class="my-2">
+                                   <div class="flex items-center mb-4">
+                                       <input class="mr-1" type="checkbox" name="checkbox">
+                                       <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Answer1</label>
+                                   </div>
+                                   <div class="flex items-center mb-4">
+                                       <input class="mr-1" type="checkbox" name="checkbox">
+                                       <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Answer2</label>
+                                   </div>
+                                   <div class="flex items-center mb-4">
+                                       <input class="mr-1" type="checkbox" name="checkbox">
+                                       <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Answer3</label>
+                                   </div>
+                                   <!-- <div class="flex items-center mb-4">
+                                     <input class="mr-1" id="other" type="checkbox" name="checkbox" value="other">
+                                     <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Other</label>
+                                     <div id="customInput">
+                                         <input  id="otherInput" class="ml-2  border-b focus:outline-none hover:border-blue-400 text-base" type="text">
+                                         <button id="acceptBtn">Add</button>
+                                     </div>
+                                 </div> -->
+                                   
+                               </div>
+                               <!-- End answers -->
+                           </div>
+                     </div>
+                      <!-- End Question -->
+
+                       <!-- Seperator line -->
+                       <hr class="border-1 border-orange-200 mx-5">
+                          
+
+                      <!-- Buttons -->
+                      <div class="text-center space-x-5 py-5 ">
+                         <a href="#" class="px-3 py-2 rounded text-base bg-orange-500">Previous</a>
+                         <a href="#" class="px-3 py-2 rounded text-base bg-orange-500">Next</a>
+                      </div>
+                     </div>
+                     <!-- End All Questions -->
+                 </div>
+             </div>
+
+             <div class=" defaultLightColor rounded-b-3xl py-4">
+                <!-- Logo and Company description -->
+               <div class="pt-2 text-base text-center">
+                    <p>© Ghana Customer Service Index. All Rights Reserved</p>
+                    <p>Powered By: WeWrite Technologies</p> 
+               </div>
+           </div>
+         </div>
+         <!-- end Content here -->
+
         
-        <div>
-            <a href="./views/admin/dashboard.html" class="text-center underline block text-green-700  font-bold hover:text-blue-00">ADMIN Dashboard</a>
-        </div>
+     </div>
+     <script>
+        var customInput = document.getElementById('customInput');
+        var otherInput = document.getElementById('otherInput');
+        var radioBtn = document.getElementsByName('radio');
+        var acceptBtn = document.getElementById('acceptBtn');
+        // console.log('checkboxes :>> ', radioBtn );
+      
+   
+        console.log('radioBtn.checked :>> ', radioBtn[2].checked);
+        for(var i=0; i<radioBtn.length; i++){
+            console.log(i)
+           
+            radioBtn[i].addEventListener('change', (e)=>{
+                
+            var value = e.target.value;
+            console.log('change :>> ', value);
+            if(value !== 'otherRadio'){
+                customInput.style.visibility = 'hidden';
+            }else{
+                customInput.style.visibility = 'visible';
+            }
+        })
+        }
 
+       acceptBtn.addEventListener('click',()=>{
+        if(otherInput.value.length !== 0){
+            acceptBtn.disabled = true;
+            acceptBtn.innerHTML = 'Accepted'
+            console.log('accepted')
+        }
+       })
 
-    </div>
-    
+       otherInput.addEventListener('change',()=>{ 
+            acceptBtn.disabled = false;
+            acceptBtn.innerHTML = 'Add'
+            console.log('add')
+        
+       })
+
+        
+
+    </script>
 </body>
 </html>
